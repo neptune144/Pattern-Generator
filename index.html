@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Printer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pattern Printer</h1>
+        <label for="patternType">Select Pattern Type:</label>
+        <select id="patternType">
+            <option value="rightTriangle">Right Triangle</option>
+            <option value="invertedRightTriangle">Inverted Right Triangle</option>
+            <option value="pyramid">Pyramid</option>
+            <option value="diamond">Diamond</option>
+            <option value="square">Square</option>
+            <option value="hollowSquare">Hollow Square</option>
+            <option value="rightTriangleNumber">Right Triangle Number</option>
+            <option value="invertedRightTriangleNumber">Inverted Right Triangle Number</option>
+            <option value="floydsTriangle">Floyd's Triangle</option>
+            <option value="pascalsTriangle">Pascal's Triangle</option>
+        </select>
+
+        <label for="rows">Enter Number of Rows:</label>
+        <input type="number" id="rows" min="1" max="20">
+
+        <button onclick="generatePattern()">Generate Pattern</button>
+
+        <pre id="patternOutput"></pre>
+    </div>
+
+    <script src="study.js"></script>
+</body>
+</html>
